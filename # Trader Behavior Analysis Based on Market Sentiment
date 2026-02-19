@@ -1,0 +1,74 @@
+# Trader Behavior Analysis Based on Market Sentiment
+
+ Objective
+
+This project analyzes trader behavior and performance under different market sentiment conditions (Fear vs Greed).  
+The goal is to identify performance differences, behavioral shifts, and propose sentiment-aware trading strategies.
+
+---
+
+# Methodology
+
+1. Data Cleaning & Preparation
+   - Converted timestamps to datetime
+   - Merged trade data with daily sentiment data
+   - Removed missing values
+
+2. Key Metrics Created
+   - Daily PnL per trader
+   - Win rate
+   - Average trade size
+   - Trade frequency
+   - Long/Short ratio
+   - Drawdown proxy (average negative PnL)
+
+3. Behavioral & Performance Analysis
+   - Compared Fear vs Greed performance
+   - Measured changes in trade size and frequency
+   - Analyzed directional bias
+
+4. Trader Segmentation
+   - Frequent vs Infrequent traders
+   - High vs Low position size traders
+   - Consistent vs Inconsistent traders
+
+---
+
+#Key Insights
+
+1. Trader profitability differs between Fear and Greed periods.
+2. Traders take larger position sizes during Greed periods, indicating higher risk appetite.
+3. Directional bias shifts with sentiment — more long trades during Greed, more short trades during Fear.
+
+
+
+# Strategy Recommendations
+
+1. Adaptive Position Sizing:
+   Reduce exposure slightly during Greed periods to manage drawdown risk.
+
+2. Sentiment-Based Directional Bias:
+   Favor long positions during Greed and hedging/short setups during Fear.
+
+
+
+# How to Run
+
+1. Clone the repository:
+   git clone <your_repo_link>
+
+2. Install required libraries:
+   pip install pandas matplotlib seaborn
+
+3. Run the notebook:
+   Open trader_sentiment_analysis.ipynb in Jupyter Notebook.
+
+
+
+# Tools Used
+
+- Python
+- Pandas
+- Matplotlib
+- Seaborn
+- Jupyter Notebook
